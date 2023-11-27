@@ -1,2 +1,30 @@
-package com.authsecurity.exampleinicial.domain.usecases;public class MedirComodoUseCase {
+package com.authsecurity.exampleinicial.domain.usecases;
+
+import com.authsecurity.exampleinicial.domain.model.Comodo;
+
+public class MedirComodoUseCase {
+
+    public static void main(String[] args) {
+        Comodo quartoGabriel = new Comodo(1.995,2.83,2.17);
+        Comodo quartoSophia = new Comodo(1.995,2.83,2.17);
+        Comodo cozinha = new Comodo(3d,2.80,2.17);
+        Comodo quartoCasal = new Comodo(3.3,4d,2.17);
+        Comodo swith = new Comodo(1.34,1.67,2.17);
+        Comodo banheiro2 = new Comodo(1.34,1.63,2.17);
+        Comodo sala = new Comodo(3d,2.74,2.17);
+
+        System.out.printf("Area construida : %f", calcAreaTotal(quartoCasal, quartoGabriel, quartoSophia, cozinha, swith, banheiro2,sala));
+
+
+    }
+
+    private static double calcAreaTotal(Comodo quartoCasal, Comodo quartoGabriel, Comodo quartoSophia, Comodo cozinha, Comodo swith, Comodo banheiro2,Comodo sala) {
+        return quartoCasal.getArea(quartoCasal) +
+                quartoGabriel.getArea(quartoGabriel) +
+                quartoSophia.getArea(quartoSophia) +
+                cozinha.getArea(cozinha) +
+                swith.getArea(swith) +
+                banheiro2.getArea(banheiro2) +
+                sala.getArea(sala);
+    }
 }
