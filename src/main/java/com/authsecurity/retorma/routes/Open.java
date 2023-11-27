@@ -1,18 +1,18 @@
-package com.authsecurity.exampleinicial.routes;
+package com.authsecurity.retorma.routes;
 
-import com.authsecurity.exampleinicial.routes.dto.ResponseDto;
+import com.authsecurity.retorma.routes.dto.ResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("closed")
 @RestController
-public class Closed {
+@RequestMapping
+public class Open {
 
     @GetMapping
-    public ResponseEntity<?> close() {
-        return new ResponseEntity<>(new ResponseDto("Conexão fechada para usuários sem credenciais"), HttpStatus.OK);
+    public ResponseEntity<?> open() {
+        return new ResponseEntity<>(new ResponseDto("Conexxão realizada com sucesso"), HttpStatus.OK);
     }
 }

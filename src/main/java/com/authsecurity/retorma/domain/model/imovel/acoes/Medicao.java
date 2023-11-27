@@ -1,6 +1,6 @@
-package com.authsecurity.exampleinicial.domain.model.imovel.acoes;
+package com.authsecurity.retorma.domain.model.imovel.acoes;
 
-import com.authsecurity.exampleinicial.domain.model.Comodo;
+import com.authsecurity.retorma.domain.model.Comodo;
 
 public interface Medicao {
 

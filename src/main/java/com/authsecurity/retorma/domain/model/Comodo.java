@@ -1,6 +1,6 @@
-package com.authsecurity.exampleinicial.domain.model;
+package com.authsecurity.retorma.domain.model;
 
-import com.authsecurity.exampleinicial.domain.model.imovel.acoes.Medicao;
+import com.authsecurity.retorma.domain.model.imovel.acoes.Medicao;
 
 public class Comodo implements Medicao {
     private double altura;

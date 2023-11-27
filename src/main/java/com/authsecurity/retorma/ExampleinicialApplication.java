@@ -1,4 +1,4 @@
-package com.authsecurity.exampleinicial;
+package com.authsecurity.retorma;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
