@@ -1,5 +1,7 @@
 package com.authsecurity.exampleinicial.domain.model;
 
+import com.authsecurity.exampleinicial.domain.model.imovel.acoes.Medicao;
+
 public class Comodo implements Medicao {
     private double altura;
     private double largura;

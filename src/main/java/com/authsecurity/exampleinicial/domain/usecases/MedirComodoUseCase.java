@@ -19,12 +19,12 @@ public class MedirComodoUseCase {
     }
 
     private static double calcAreaTotal(Comodo quartoCasal, Comodo quartoGabriel, Comodo quartoSophia, Comodo cozinha, Comodo swith, Comodo banheiro2,Comodo sala) {
-        return quartoCasal.getArea(quartoCasal) +
-                quartoGabriel.getArea(quartoGabriel) +
-                quartoSophia.getArea(quartoSophia) +
-                cozinha.getArea(cozinha) +
-                swith.getArea(swith) +
-                banheiro2.getArea(banheiro2) +
-                sala.getArea(sala);
+        return quartoCasal.obterAreaTotal(quartoCasal) +
+                quartoGabriel.obterAreaTotal(quartoGabriel) +
+                quartoSophia.obterAreaTotal(quartoSophia) +
+                cozinha.obterAreaTotal(cozinha) +
+                swith.obterAreaTotal(swith) +
+                banheiro2.obterAreaTotal(banheiro2) +
+                sala.obterAreaTotal(sala);
     }
 }
